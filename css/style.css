@@ -1933,6 +1933,14 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 61.99875em) {
+  .block-numbers-1 .block-numbers-image {
+    height: 40.625rem;
+  }
+
+  .block-numbers-2 .block-numbers-image {
+    height: 40.625rem;
+  }
+
   .every__title {
     max-width: 30.9375rem;
   }
