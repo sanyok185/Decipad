@@ -240,7 +240,6 @@ h6 {
 
 .menu__link-login:hover {
   color: #C1FA6B;
-  border: 1px solid #C1FA6B;
 }
 
 .icon-menu {
@@ -2673,7 +2672,7 @@ button.swiper-pagination-bullet {
   }
 
   .menu__link {
-    font-size: 1.875rem;
+    font-size: 2.0625rem;
   }
 
   .menu__link:hover {
@@ -2689,6 +2688,7 @@ button.swiper-pagination-bullet {
     height: 3.125rem;
     width: 6.25rem;
     margin-top: -0.3125rem;
+    border: 1px solid #ffffff;
   }
 
   .icon-menu {
