@@ -1951,6 +1951,10 @@ button.swiper-pagination-bullet {
     padding-right: 0;
   }
 
+  .block-numbers-2 .block-numbers-content {
+    margin-left: 4rem;
+  }
+
   .block-numbers-2 {
     padding-left: 0;
   }
