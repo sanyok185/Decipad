@@ -571,6 +571,8 @@ h6 {
   border-radius: 32px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 25%;
+     object-position: 25%;
 }
 
 .block-numbers-1 .block-numbers-content {
@@ -606,8 +608,10 @@ h6 {
   max-width: 100%;
   border: 1px solid #d9def1;
   border-radius: 2rem;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 25%;
+     object-position: 25%;
 }
 
 .block-numbers-2 .block-numbers-content {
@@ -1932,13 +1936,23 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (min-width: 61.99875em) {
+@media (min-width: 61.99875em) and (min-width: 75em) {
   .block-numbers-1 .block-numbers-image {
     height: 40.625rem;
   }
 
   .block-numbers-2 .block-numbers-image {
     height: 40.625rem;
+  }
+}
+
+@media (min-width: 61.99875em) {
+  .block-numbers-1 {
+    padding-right: 0;
+  }
+
+  .block-numbers-2 {
+    padding-left: 0;
   }
 
   .every__title {
@@ -3469,6 +3483,32 @@ button.swiper-pagination-bullet {
 @supports not (height: clamp( 15.9375rem , 5.9672619048rem  +  49.8511904762vw , 36.875rem )) {
     .every__image {
       height: calc(15.9375rem + 20.9375 * (100vw - 20rem) / 42);
+    }
+}
+}
+
+@media (min-width: 61.99875em) and (min-width: 62em) and (max-width: 75em) {
+@supports (height: clamp( 28.125rem , -31.4903846154rem  +  96.1538461538vw , 40.625rem )) {
+    .block-numbers-1 .block-numbers-image {
+      height: clamp( 28.125rem , -31.4903846154rem  +  96.1538461538vw , 40.625rem );
+    }
+}
+
+@supports not (height: clamp( 28.125rem , -31.4903846154rem  +  96.1538461538vw , 40.625rem )) {
+    .block-numbers-1 .block-numbers-image {
+      height: calc(28.125rem + 12.5 * (100vw - 62rem) / 13);
+    }
+}
+
+@supports (height: clamp( 28.125rem , -31.4903846154rem  +  96.1538461538vw , 40.625rem )) {
+    .block-numbers-2 .block-numbers-image {
+      height: clamp( 28.125rem , -31.4903846154rem  +  96.1538461538vw , 40.625rem );
+    }
+}
+
+@supports not (height: clamp( 28.125rem , -31.4903846154rem  +  96.1538461538vw , 40.625rem )) {
+    .block-numbers-2 .block-numbers-image {
+      height: calc(28.125rem + 12.5 * (100vw - 62rem) / 13);
     }
 }
 }
